@@ -5,7 +5,7 @@
 MgsModbus Mb;
 
 byte mac[] = {0x90, 0xA2, 0xDA, 0x0E, 0x94, 0xB5 }; // Ethernet MAC Address
-byte ip[] = {192, 168, 1, 150};
+byte ip[] = {192, 168, 1, 223};
 byte sub[] = {255, 255, 255, 255};
 
 int potPin0 = 0;    // Αναλογική πόρτα 0
@@ -31,7 +31,7 @@ void setup(){
   pinMode(relay3, OUTPUT);
   pinMode(relay4, OUTPUT);
   pinMode(relay5, OUTPUT);
-  Mb.remSlaveIP = (192,168,1,201);
+  Mb.remSlaveIP = (192,168,1,222);
   Ethernet.begin(mac, ip, sub);
 }
 
